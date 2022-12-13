@@ -1,0 +1,25 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarefa-map",
+      "appliesTo": "client/map.cs",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tarefa-client",
+      "appliesTo": "client/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tarefa-greepo",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tarefa-greepo",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}
