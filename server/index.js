@@ -92,44 +92,35 @@ app.get('/projects/:id', (req, res) => {
     });
 });
 
-
+/*
 app.get('/updateMunicipality', (req, res) => {
-    selectProjects(connection);
-    
+    selectProjects(connection);    
 });
 
-// Start the server
-app.listen(2080, () => {
-    console.log('Server is listening on port 2080');
-});
 
-function selectProjects(con) {
+ * function selectProjects(con) {
     var municipalities = [];
-    var uniqueMun = [];
 
     // make the SELECT query
-    const sql = 'SELECT municipality FROM `projects`';
+    const sql = 'SELECT DISTINCT municipality FROM `projects`';
     con.query(sql, (err, results) => {
         if (err) throw err;
 
         for (let i = 0; i < results.length; i++) {
             municipalities.push(results[i].municipality);
         }
-
-        uniqueMun = Array.from(new Set(municipalities));
-        insertMuni(con, uniqueMun);
-
-        // end the database connection
-        connection.end((err) => {
-            if (err) throw err;
-        });
+        
+        for (let i = 0; i < municipalities.length; i++) {
+            const stmt = 'INSERT INTO municipality (name) VALUES (?)';
+            con.query(stmt, [municipalities[i]]);
+            console.log(i + 'lines inserted');
+        }
     });
 }
+*/
 
-function insertMuni(con, arr) {
-    const stmt = con.prepare('INSERT INTO municipality (name) VALUES (?)');
-    for (let i = 0; i < arr.length; i++) {
-        stmt.execute([arr[i]]);
-        console.log(i + 'lines inserted');
-    }
-}
+// Start the server
+app.listen(2080, () => {
+    console.log('Server is listening on port 2080');
+});
+
