@@ -1,6 +1,8 @@
 const mysql = require('mysql2');
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -118,6 +120,72 @@ app.get('/updateMunicipality', (req, res) => {
     });
 }
 */
+
+app.post('/login', function (request, response) {
+    // Capture the input fields
+    let email = request.body.email;
+    let password = request.body.password;
+    // Ensure the input fields exists and are not empty
+    if (email && password) {
+        // Execute SQL query that'll select the account from the database based on the specified username and password
+        connection.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, password], function (error, results, fields) {
+            // If there is an issue with the query, output the error
+            if (error) throw error;
+            // If the account exists
+            if (results.length > 0) {
+                // Redirect to home page
+                response.send(true);
+            } else {
+                response.send(false);
+            }
+            response.end();
+        });
+    } else {
+        response.send(false);
+        response.end();
+    }
+});
+
+app.post('/signup', function (request, response) {
+    // Capture the input fields
+    let name = request.body.name;
+    let gender = request.body.gender;
+    let email = request.body.email;
+    let password = request.body.password;
+    // Ensure the input fields exists and are not empty
+    if (email && password && name && gender) {
+
+        //Check if there is an account with that email already
+        doesUserExist(email) && response.send(false);
+
+        // Execute SQL query that'll select the account from the database based on the specified username and password
+        connection.query('INSERT INTO `users`(`name`, `email`, `password`,`gender`) VALUES (?,?,?,?)', [name,email, password, gender], function (error, results, fields) {
+            // If there is an issue with the query, output the error
+            if (error) throw error;
+            response.send(true);
+            response.end();
+        });
+    } else {
+        response.send(false);
+        response.end();
+    }
+});
+
+function doesUserExist(email)
+{
+    connection.query('SELECT * FROM users WHERE email = ? ', [email], function (error, results, fields) {
+        // If there is an issue with the query, output the error
+        if (error) throw error;
+        // If user already exists
+        if (results.length > 0) {
+            // Redirect to home page
+            return true;
+        } else {
+            return false;
+        }
+    });
+}
+
 
 // Start the server
 app.listen(2080, () => {

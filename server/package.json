@@ -17,6 +17,7 @@
   "author": "Miguel Rodrigues",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3"
