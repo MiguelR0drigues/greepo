@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Greepo
@@ -23,7 +15,7 @@ namespace Greepo
             LiveCharts.WinForms.GeoMap geoMap = new LiveCharts.WinForms.GeoMap();
             geoMap.Source = $"{Application.StartupPath}/World.xml";
             this.Controls.Add(geoMap);
-            geoMap.Dock= DockStyle.Fill;    
+            geoMap.Dock = DockStyle.Fill;
         }
     }
 }

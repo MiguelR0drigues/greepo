@@ -41,7 +41,7 @@
             this.ddGender = new System.Windows.Forms.ComboBox();
             this.inptConfirmPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkToLogin = new System.Windows.Forms.LinkLabel();
+            this.lblLinkToLogin = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btnReset
@@ -113,7 +113,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(247, 43);
+            this.lblTitle.Location = new System.Drawing.Point(315, 51);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(171, 29);
             this.lblTitle.TabIndex = 8;
@@ -152,6 +152,7 @@
             // 
             this.ddGender.FormattingEnabled = true;
             this.ddGender.Items.AddRange(new object[] {
+            "--select--",
             "Male",
             "Female",
             "Non-Binary",
@@ -182,23 +183,23 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Confirm Password";
             // 
-            // linkToLogin
+            // lblLinkToLogin
             // 
-            this.linkToLogin.AutoSize = true;
-            this.linkToLogin.Location = new System.Drawing.Point(418, 265);
-            this.linkToLogin.Name = "linkToLogin";
-            this.linkToLogin.Size = new System.Drawing.Size(166, 16);
-            this.linkToLogin.TabIndex = 22;
-            this.linkToLogin.TabStop = true;
-            this.linkToLogin.Text = "Already Have an Account?";
-            this.linkToLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkToLogin_LinkClicked);
+            this.lblLinkToLogin.AutoSize = true;
+            this.lblLinkToLogin.Location = new System.Drawing.Point(423, 262);
+            this.lblLinkToLogin.Name = "lblLinkToLogin";
+            this.lblLinkToLogin.Size = new System.Drawing.Size(162, 16);
+            this.lblLinkToLogin.TabIndex = 24;
+            this.lblLinkToLogin.TabStop = true;
+            this.lblLinkToLogin.Text = "Already have an account?";
+            this.lblLinkToLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkToLogin_LinkClicked);
             // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.linkToLogin);
+            this.Controls.Add(this.lblLinkToLogin);
             this.Controls.Add(this.inptConfirmPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ddGender);
@@ -233,6 +234,6 @@
         private System.Windows.Forms.ComboBox ddGender;
         private System.Windows.Forms.TextBox inptConfirmPassword;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkToLogin;
+        private System.Windows.Forms.LinkLabel lblLinkToLogin;
     }
 }

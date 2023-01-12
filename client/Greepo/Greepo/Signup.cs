@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace Greepo
@@ -17,19 +10,15 @@ namespace Greepo
         public SignUp()
         {
             InitializeComponent();
-            inptName.TabIndex=0;
-            inptEmail.TabIndex=1;
-            ddGender.TabIndex=2;
-            inptPassword.TabIndex=3;
-            inptConfirmPassword.TabIndex=4;
+            inptName.TabIndex = 0;
+            inptEmail.TabIndex = 1;
+            ddGender.TabIndex = 2;
+            inptPassword.TabIndex = 3;
+            inptConfirmPassword.TabIndex = 4;
         }
         private void ddGender_Load(object sender, EventArgs e)
         {
-            ddGender.Items.Add("Male");
-            ddGender.Items.Add("Female");
-            ddGender.Items.Add("Non-Binary");
-            ddGender.Items.Add("Other");
-            ddGender.DropDownStyle = ComboBoxStyle.DropDownList;
+            ddGender.SelectedIndex = 0;
         }
         private void ddGender_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -75,7 +64,7 @@ namespace Greepo
             string password = inptPassword.Text;
             string confirmPassword = inptConfirmPassword.Text;
 
-            if(string.IsNullOrEmpty(gender) || string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
+            if (string.IsNullOrEmpty(gender) || string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
             {
                 MessageBox.Show("Every field is mandatory!", "Error");
                 return;
@@ -142,11 +131,11 @@ namespace Greepo
 
         }
 
-        private void linkToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblLinkToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Login login = new Login();
             login.Show();
-            Hide();
         }
     }
 }

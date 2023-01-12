@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Net.Http;
+using System.Text;
+using System.Windows.Forms;
 
 namespace Greepo
 {
@@ -71,12 +65,12 @@ namespace Greepo
             else if (responseBody == "false")
             {
                 // Login failed
-                MessageBox.Show("Login failed.","Error");
+                MessageBox.Show("Login failed.", "Error");
             }
             else
             {
                 // Unexpected response
-               MessageBox.Show("Unexpected response: " + responseBody, "Error");
+                MessageBox.Show("Unexpected response: " + responseBody, "Error");
             }
 
             //reset form inputs

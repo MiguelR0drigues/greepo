@@ -20,9 +20,9 @@ C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.exe
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.pdb
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\World.xml
+C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\Greepo.exe
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\World.xml
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\Greepo.exe.config
-C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\Greepo.exe
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\Greepo.pdb
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.dll
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.WinForms.dll
@@ -36,11 +36,11 @@ C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\bin\Debug\Liv
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.AssemblyReference.cache
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.SuggestedBindingRedirects.cache
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Form1.resources
+C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.resources
+C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Properties.Resources.resources
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.GenerateResource.cache
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CoreCompileInputs.cache
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CopyComplete
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.exe
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.pdb
-C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
-C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.resources
