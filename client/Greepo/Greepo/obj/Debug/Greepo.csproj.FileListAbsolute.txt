@@ -44,3 +44,27 @@ C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Gre
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CopyComplete
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.exe
 C:\Users\Miguel Rodrigues\Source\Repos\greepo\client\Greepo\Greepo\obj\Debug\Greepo.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\World.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Greepo.exe.config
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Greepo.exe
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Greepo.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.WinForms.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.Wpf.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.WinForms.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.WinForms.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.Wpf.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.Wpf.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.AssemblyReference.cache
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.SuggestedBindingRedirects.cache
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Form1.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Properties.Resources.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.GenerateResource.cache
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CoreCompileInputs.cache
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CopyComplete
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.exe
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.pdb
