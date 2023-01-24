@@ -59,7 +59,8 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lblTitle);
             this.Name = "Projects";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Projects List";
             this.Load += new System.EventHandler(this.Projects_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

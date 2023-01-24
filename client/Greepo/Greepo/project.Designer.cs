@@ -33,16 +33,16 @@
             // 
             // lblProjectTitle
             // 
-            this.lblProjectTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblProjectTitle.AutoSize = true;
             this.lblProjectTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProjectTitle.LinkColor = System.Drawing.Color.Black;
-            this.lblProjectTitle.Location = new System.Drawing.Point(266, 54);
+            this.lblProjectTitle.Location = new System.Drawing.Point(4, 9);
+            this.lblProjectTitle.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.lblProjectTitle.Name = "lblProjectTitle";
-            this.lblProjectTitle.Size = new System.Drawing.Size(227, 42);
+            this.lblProjectTitle.Size = new System.Drawing.Size(779, 107);
             this.lblProjectTitle.TabIndex = 0;
             this.lblProjectTitle.TabStop = true;
             this.lblProjectTitle.Text = "Project Title";
+            this.lblProjectTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblProjectTitle.VisitedLinkColor = System.Drawing.Color.Black;
             this.lblProjectTitle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblProjectTitle_LinkClicked);
             // 
@@ -53,9 +53,10 @@
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.lblProjectTitle);
             this.Name = "project";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project";
+            this.Load += new System.EventHandler(this.project_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

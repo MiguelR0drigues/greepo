@@ -13,17 +13,23 @@ using System.Windows.Forms;
 
 namespace Greepo
 {
+
+
     public partial class Projects : Form
     {
         private List<int> projectIds = new List<int>();
+        private bool isFormLoad = true;
         public Projects()
         {
             InitializeComponent();
+
         }
 
         private async void Projects_Load(object sender, EventArgs e)
         {
+            listBox1.SelectedIndex = -1;
             await MakeApiCall();
+            isFormLoad = false;
         }
 
         private async Task MakeApiCall()
@@ -61,15 +67,18 @@ namespace Greepo
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedIndex != -1)
+            if(!isFormLoad)
             {
-                int selectedIndex = listBox1.SelectedIndex;
-                //Getting the project id of the selected row
-                int projectId = projectIds[selectedIndex];
-                //Creating a new instance of the Project form and passing the project id
-                project project = new project(projectId);
-                project.Show();
-            }
+                if (listBox1.SelectedIndex != -1)
+                {
+                    int selectedIndex = listBox1.SelectedIndex;
+                    //Getting the project id of the selected row
+                    int projectId = projectIds[selectedIndex];
+                    //Creating a new instance of the Project form and passing the project id
+                    project project = new project(projectId);
+                    project.Show();
+                }
+            }    
         }
 
     }
