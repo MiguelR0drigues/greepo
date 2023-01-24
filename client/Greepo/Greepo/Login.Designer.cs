@@ -40,21 +40,23 @@
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(260, 90);
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(360, 135);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(320, 31);
+            this.lblTitle.Size = new System.Drawing.Size(127, 42);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Welcome to Login Page";
+            this.lblTitle.Text = "Log In\r\n";
             this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(262, 153);
+            this.lblEmail.Location = new System.Drawing.Point(241, 190);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(48, 20);
@@ -64,19 +66,21 @@
             // 
             // lblPassword
             // 
+            this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(262, 213);
+            this.lblPassword.Location = new System.Drawing.Point(241, 250);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.Size = new System.Drawing.Size(109, 20);
             this.lblPassword.TabIndex = 2;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Palavra-passe";
             // 
             // inptEmail
             // 
-            this.inptEmail.Location = new System.Drawing.Point(266, 175);
-            this.inptEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inptEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.inptEmail.Location = new System.Drawing.Point(245, 212);
+            this.inptEmail.Margin = new System.Windows.Forms.Padding(2);
             this.inptEmail.MaxLength = 150;
             this.inptEmail.Name = "inptEmail";
             this.inptEmail.Size = new System.Drawing.Size(311, 20);
@@ -85,8 +89,9 @@
             // 
             // inptPassword
             // 
-            this.inptPassword.Location = new System.Drawing.Point(266, 235);
-            this.inptPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inptPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.inptPassword.Location = new System.Drawing.Point(245, 272);
+            this.inptPassword.Margin = new System.Windows.Forms.Padding(2);
             this.inptPassword.MaxLength = 150;
             this.inptPassword.Name = "inptPassword";
             this.inptPassword.PasswordChar = '●';
@@ -96,12 +101,13 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogin.AutoSize = true;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Location = new System.Drawing.Point(436, 328);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Location = new System.Drawing.Point(418, 365);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Padding = new System.Windows.Forms.Padding(4);
             this.btnLogin.Size = new System.Drawing.Size(141, 31);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
@@ -110,28 +116,30 @@
             // 
             // btnReset
             // 
+            this.btnReset.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReset.AutoSize = true;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Location = new System.Drawing.Point(266, 328);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReset.Location = new System.Drawing.Point(245, 365);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Padding = new System.Windows.Forms.Padding(4);
             this.btnReset.Size = new System.Drawing.Size(143, 31);
             this.btnReset.TabIndex = 6;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "Limpar";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // linkToSignup
             // 
+            this.linkToSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkToSignup.AutoSize = true;
-            this.linkToSignup.Location = new System.Drawing.Point(367, 282);
+            this.linkToSignup.Location = new System.Drawing.Point(363, 319);
             this.linkToSignup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkToSignup.Name = "linkToSignup";
-            this.linkToSignup.Size = new System.Drawing.Size(122, 13);
+            this.linkToSignup.Size = new System.Drawing.Size(83, 13);
             this.linkToSignup.TabIndex = 7;
             this.linkToSignup.TabStop = true;
-            this.linkToSignup.Text = "Don\'t have an account?";
+            this.linkToSignup.Text = "Não tem conta?";
             this.linkToSignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkToSignup_LinkClicked);
             // 
             // Login
@@ -147,7 +155,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page";

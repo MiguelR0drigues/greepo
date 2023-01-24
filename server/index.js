@@ -30,17 +30,12 @@ app.get('/', (req, res) => {
 // Get every project
 app.get('/projects', (req, res) => {
     // make the SELECT query
-    const sql = 'SELECT * FROM `projects`';
+    const sql = 'SELECT * FROM `projects` ORDER BY `id_municipality`';
     connection.query(sql, (err, results) => {
         if (err) throw err;
 
         // do something with the results
         res.send(results);
-
-        // end the database connection
-        connection.end((err) => {
-            if (err) throw err;
-        });
     });
 });
 

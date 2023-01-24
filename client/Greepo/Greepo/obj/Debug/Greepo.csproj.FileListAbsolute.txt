@@ -68,3 +68,7 @@ D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CoreCompileInputs.
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.CopyComplete
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.exe
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Projects.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources

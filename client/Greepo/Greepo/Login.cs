@@ -59,8 +59,9 @@ namespace Greepo
             // Check the value of the response
             if (responseBody == "true")
             {
-                // Login was successful
-                MessageBox.Show("Login successful!", "Info");
+                Projects Projects = new Projects();
+                Projects.Show();
+                Hide();
             }
             else if (responseBody == "false")
             {

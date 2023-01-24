@@ -15,6 +15,7 @@ namespace Greepo
             ddGender.TabIndex = 2;
             inptPassword.TabIndex = 3;
             inptConfirmPassword.TabIndex = 4;
+            ddGender.SelectedIndex = 0;
         }
         private void ddGender_Load(object sender, EventArgs e)
         {
@@ -22,7 +23,6 @@ namespace Greepo
         }
         private void ddGender_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void inptPassword_TextChanged(object sender, EventArgs e)
@@ -136,6 +136,36 @@ namespace Greepo
             this.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGender_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmail_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
