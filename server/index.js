@@ -56,6 +56,22 @@ app.get('/projects/:id', (req, res) => {
   });
 });
 
+// Get project by id
+app.get('/municipality/:id', (req, res) => {
+
+    // get the user id from the request parameters and escape it
+    const id = mysql.escape(req.params.id);
+
+    // make the SELECT query, using the id in the WHERE clause
+    const sql = `SELECT name FROM municipality WHERE id_municipality = ${id} LIMIT 1`;
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results[0]);
+    });
+});
+
 // Get every user
 app.get('/users', (req, res) => {
     // make the SELECT query
