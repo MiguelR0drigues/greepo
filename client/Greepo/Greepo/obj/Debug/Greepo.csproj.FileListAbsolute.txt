@@ -72,3 +72,9 @@ D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Projects.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Projects.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
