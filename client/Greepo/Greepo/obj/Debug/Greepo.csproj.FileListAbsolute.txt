@@ -72,3 +72,6 @@ D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Projects.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Graph.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.xml
