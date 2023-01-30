@@ -32,20 +32,21 @@ namespace Greepo
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync($"http://localhost:2080/regioes{_regiaoId}");
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:2080/regioes/{_regiaoId}");
                 if (response.IsSuccessStatusCode)
                 {
-
+                   
                     string responseBody = await response.Content.ReadAsStringAsync();
                     JArray json = JArray.Parse(responseBody);
                     if (json != null)
                     {
                         foreach (var item in json)
                         {
-                            resultsList.Add(item["name"].ToString());
+                            resultsList.Add(item["project_name"].ToString());
+                            resultsList.Add(item["municipality_name"].ToString());
 
                         }
-                        MessageBox.Show(resultsList.ToString());
+                        listBox1.Invoke((MethodInvoker)(() => listBox1.DataSource = resultsList));
                     }
                     else
                     {

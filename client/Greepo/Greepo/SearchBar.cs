@@ -43,6 +43,7 @@ namespace Greepo
                     {
                         foreach (var item in json)
                         {
+                            regiaoIds.Add(int.Parse(item["id"].ToString()));
                             resultsList.Add(item["name"].ToString());
 
                         }

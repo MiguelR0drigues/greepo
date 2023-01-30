@@ -37,7 +37,8 @@ app.get('/regioes', (req, res) => {
 });
 app.get('/regioes/:id', (req, res) => {
     // make the SELECT query
-    const sql = 'SELECT municipality.name AS municipality_name,projects.name AS project_name,projects.description AS project_description, regioes.name AS region_name FROM municipality JOIN projects ON municipality.id_municipality = projects.id_municipality JOIN regioes ON municipality.regiao = regioes.id;'
+    const id = mysql.escape(req.params.id);
+    const sql = `SELECT municipality.name AS municipality_name,projects.name AS project_name,projects.description AS project_description, regioes.name AS region_name FROM municipality JOIN projects ON municipality.id_municipality = projects.id_municipality JOIN regioes ON municipality.regiao = regioes.id WHERE regioes.id = ${id};`
     connection.query(sql, (err, results) => {
         if (err) throw err;
 
