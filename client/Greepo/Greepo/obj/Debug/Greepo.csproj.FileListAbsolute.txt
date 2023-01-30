@@ -75,3 +75,14 @@ D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Graph.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Graph.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Projects.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Search.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchBar.resources

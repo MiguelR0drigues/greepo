@@ -25,8 +25,26 @@ connection.connect((err) => {
 app.get('/', (req, res) => {
     res.send('You should not be here, please leave now!');
 });
+app.get('/regioes', (req, res) => {
+    // make the SELECT query
+    const sql = 'SELECT * FROM `regioes` ORDER BY `id`';
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
 
+        // do something with the results
+        res.send(results);
+    });
+});
+app.get('/regioes/:id', (req, res) => {
+    // make the SELECT query
+    const sql = 'SELECT municipality.name AS municipality_name,projects.name AS project_name,projects.description AS project_description, regioes.name AS region_name FROM municipality JOIN projects ON municipality.id_municipality = projects.id_municipality JOIN regioes ON municipality.regiao = regioes.id;'
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
 
+        // do something with the results
+        res.send(results);
+    });
+});
 // Get every project
 app.get('/projects', (req, res) => {
     // make the SELECT query
