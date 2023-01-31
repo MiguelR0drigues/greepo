@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\client",
-    "\\client\\Greepo",
-    "\\client\\Greepo\\Greepo",
-    "\\server"
+    ""
   ],
-  "SelectedNode": "\\client\\Greepo\\Greepo\\projects.cs",
+  "SelectedNode": "\\Greepo.sln",
   "PreviewInSolutionExplorer": true
 }

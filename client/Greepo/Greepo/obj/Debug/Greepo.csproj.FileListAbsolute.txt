@@ -86,3 +86,5 @@ C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Search.resources
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchBar.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchMunicipio.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchMunicipioProject.resources

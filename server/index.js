@@ -35,6 +35,27 @@ app.get('/regioes', (req, res) => {
         res.send(results);
     });
 });
+app.get('/municipality', (req, res) => {
+    // make the SELECT query
+    const sql = 'SELECT * FROM `municipality` ORDER BY `id_municipality`';
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
+});
+app.get('/municipality/:id', (req, res) => {
+    // make the SELECT query
+    const id = mysql.escape(req.params.id);
+    const sql = `SELECT municipality.name AS municipality_name,projects.name AS project_name,projects.description AS project_description FROM municipality INNER JOIN projects ON municipality.id_municipality = projects.id_municipality WHERE municipality.id_municipality = ${id};`
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
+});
 app.get('/regioes/:id', (req, res) => {
     // make the SELECT query
     const id = mysql.escape(req.params.id);
