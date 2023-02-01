@@ -45,7 +45,7 @@ app.get('/municipality', (req, res) => {
         res.send(results);
     });
 });
-app.get('/municipality/:id', (req, res) => {
+app.get('/municipalityProject/:id', (req, res) => {
     // make the SELECT query
     const id = mysql.escape(req.params.id);
     const sql = `SELECT municipality.name AS municipality_name,projects.name AS project_name,projects.description AS project_description FROM municipality INNER JOIN projects ON municipality.id_municipality = projects.id_municipality WHERE municipality.id_municipality = ${id};`
@@ -67,6 +67,28 @@ app.get('/regioes/:id', (req, res) => {
         res.send(results);
     });
 });
+app.get('/distritos', (req, res) => {
+    // make the SELECT query
+    const sql = 'SELECT * FROM `distritos` ORDER BY `id`';
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
+});
+app.get('/distritos/:id', (req, res) => {
+    // make the SELECT query
+    const id = mysql.escape(req.params.id);
+    const sql = `SELECT distritos.name AS district_name,projects.name AS project_name,projects.description AS project_description FROM municipality JOIN distritos ON municipality.distrito = distritos.id JOIN projects ON municipality.id_municipality = projects.id_municipality JOIN regioes ON municipality.regiao = regioes.id WHERE distritos.id = ${id} ;`
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
+});
+
 // Get every project
 app.get('/projects', (req, res) => {
     // make the SELECT query

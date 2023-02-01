@@ -1,6 +1,6 @@
 ﻿namespace Greepo
 {
-    partial class SearchMunicipioProject
+    partial class SearchDistrito
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,20 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(45, 38);
+            this.listBox1.Location = new System.Drawing.Point(104, 115);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(689, 356);
+            this.listBox1.Size = new System.Drawing.Size(414, 196);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // SearchMunicipioProject
+            // SearchDistrito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listBox1);
-            this.Name = "SearchMunicipioProject";
-            this.Text = "SearchMunicipioProject";
+            this.Name = "SearchDistrito";
+            this.Text = "SearchDistrito";
             this.Load += new System.EventHandler(this.Search_Load);
             this.ResumeLayout(false);
 

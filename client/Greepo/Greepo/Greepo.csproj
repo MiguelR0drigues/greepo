@@ -127,6 +127,18 @@
     <Compile Include="SearchBar.Designer.cs">
       <DependentUpon>SearchBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchDistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDistrito.Designer.cs">
+      <DependentUpon>SearchDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDistritoProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDistritoProject.Designer.cs">
+      <DependentUpon>SearchDistritoProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchMunicipio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchBar.resx">
       <DependentUpon>SearchBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDistrito.resx">
+      <DependentUpon>SearchDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDistritoProject.resx">
+      <DependentUpon>SearchDistritoProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchMunicipio.resx">
       <DependentUpon>SearchMunicipio.cs</DependentUpon>

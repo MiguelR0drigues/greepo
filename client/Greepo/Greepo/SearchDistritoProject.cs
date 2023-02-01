@@ -12,26 +12,25 @@ using System.Windows.Forms;
 
 namespace Greepo
 {
-    public partial class SearchMunicipioProject : Form
+    public partial class SearchDistritoProject : Form
     {
-        private int _municipioId;
-        public SearchMunicipioProject(int municipioId)
+        private int _distritoId; 
+        public SearchDistritoProject(int distritoId)
         {
             InitializeComponent();
-            _municipioId = municipioId;
+            _distritoId = distritoId;
         }
         private async void Search_Load(object sender, EventArgs e)
         {
-            await GetProjectsByMunicipio();
-
+            await GetProjectsByDistrito();
         }
-        private async Task GetProjectsByMunicipio()
+        private async Task GetProjectsByDistrito()
         {
             List<string> resultsList = new List<string>();
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync($"http://localhost:2080/municipalityProject/{_municipioId}");
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:2080/distritos/{_distritoId}");
                 if (response.IsSuccessStatusCode)
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
@@ -62,3 +61,4 @@ namespace Greepo
         }
     }
 }
+    
