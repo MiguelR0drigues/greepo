@@ -13,7 +13,7 @@ namespace Greepo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SearchDistrito());
+            Application.Run(new SearchMunicipio());
         }
     }
 }
