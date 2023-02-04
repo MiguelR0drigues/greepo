@@ -90,3 +90,4 @@ C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchM
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchMunicipioProject.resources
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchDistrito.resources
 C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchDistritoProject.resources
+C:\Users\utilizador\Desktop\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Options.resources

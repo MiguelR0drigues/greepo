@@ -80,7 +80,7 @@ app.get('/distritos', (req, res) => {
 app.get('/distritos/:id', (req, res) => {
     // make the SELECT query
     const id = mysql.escape(req.params.id);
-    const sql = `SELECT distritos.name AS district_name,projects.name AS project_name,projects.description AS project_description FROM municipality JOIN distritos ON municipality.distrito = distritos.id JOIN projects ON municipality.id_municipality = projects.id_municipality JOIN regioes ON municipality.regiao = regioes.id WHERE distritos.id = ${id} ;`
+    const sql = `SELECT distritos.name AS district_name,projects.name AS project_name,projects.id_project As id_project,projects.description AS project_description FROM municipality JOIN distritos ON municipality.distrito = distritos.id JOIN projects ON municipality.id_municipality = projects.id_municipality JOIN regioes ON municipality.regiao = regioes.id WHERE distritos.id = ${id} ;`
     connection.query(sql, (err, results) => {
         if (err) throw err;
 
