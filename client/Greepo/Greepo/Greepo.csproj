@@ -345,6 +345,12 @@
     <Compile Include="Graph.Designer.cs">
       <DependentUpon>Graph.cs</DependentUpon>
     </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
     <Compile Include="projects.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +362,42 @@
     </Compile>
     <Compile Include="project.Designer.cs">
       <DependentUpon>project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBar.Designer.cs">
+      <DependentUpon>SearchBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDistrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDistrito.Designer.cs">
+      <DependentUpon>SearchDistrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDistritoProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDistritoProject.Designer.cs">
+      <DependentUpon>SearchDistritoProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMunicipio.Designer.cs">
+      <DependentUpon>SearchMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMunicipioProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMunicipioProject.Designer.cs">
+      <DependentUpon>SearchMunicipioProject.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
@@ -380,11 +422,32 @@
     <EmbeddedResource Include="Graph.resx">
       <DependentUpon>Graph.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="projects.resx">
       <DependentUpon>projects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="project.resx">
       <DependentUpon>project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBar.resx">
+      <DependentUpon>SearchBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDistrito.resx">
+      <DependentUpon>SearchDistrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDistritoProject.resx">
+      <DependentUpon>SearchDistritoProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMunicipio.resx">
+      <DependentUpon>SearchMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMunicipioProject.resx">
+      <DependentUpon>SearchMunicipioProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>

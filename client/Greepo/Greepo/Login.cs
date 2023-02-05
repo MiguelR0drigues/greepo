@@ -59,8 +59,8 @@ namespace Greepo
             // Check the value of the response
             if (responseBody == "true")
             {
-                Projects Projects = new Projects();
-                Projects.Show();
+                Options options = new Options();
+                options.Show();
                 Hide();
             }
             else if (responseBody == "false")
