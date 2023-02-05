@@ -55,7 +55,6 @@ namespace Greepo
                         lblDesc.Text = json[0].description;
                         _muniId= json[0].id_municipality;
                     }));
-
                 }
                 else
                 {

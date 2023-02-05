@@ -43,7 +43,7 @@ app.get('/projects', (req, res) => {
 // Get project by id
 app.get('/projects/:id', (req, res) => {
 
-    // get the user id from the request parameters and escape it
+    // get the project id from the request parameters and escape it
     const id = mysql.escape(req.params.id);
 
     // make the SELECT query, using the id in the WHERE clause
@@ -54,6 +54,54 @@ app.get('/projects/:id', (req, res) => {
     // do something with the results
     res.send(results);
   });
+});
+
+// Get project values
+app.get('/projects-values/', (req, res) => {
+
+    // get the user id from the request parameters and escape it
+    const id = mysql.escape(req.params.id);
+
+    // make the SELECT query, using the id in the WHERE clause
+    const sql = `SELECT * FROM projects_values WHERE o1 is not null or o2 is not null`;
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
+});
+
+// Get project ID and values for every project in a certain municipality
+app.get('/projectIdandValues/:municipality', (req, res) => {
+
+    // get the project id from the request parameters and escape it
+    const municipality = mysql.escape(req.params.municipality);
+
+    // make the SELECT query, using the id in the WHERE clause
+    const sql = `SELECT projects.id_project, projects_values.o1, projects_values.o2, projects_values.o3, projects_values.o4, projects_values.o5, projects_values.o6, projects_values.o7, projects_values.o8, projects_values.o9, projects_values.o10, projects_values.o11, projects_values.o12, projects_values.o13, projects_values.o14, projects_values.o15, projects_values.o16, projects_values.o17 FROM projects JOIN projects_values ON projects.id_project = projects_values.id_projects JOIN municipality ON projects.id_municipality = municipality.id_municipality WHERE municipality.name = ${municipality};`;
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
+});
+
+// Get project values by id
+app.get('/projects-values/:id', (req, res) => {
+
+    // get the project id from the request parameters and escape it
+    const id = mysql.escape(req.params.id);
+
+    // make the SELECT query, using the id in the WHERE clause
+    const sql = `SELECT * FROM projects_values WHERE o1 is not null or o2 is not null and id_project = ${id}`;
+    connection.query(sql, (err, results) => {
+        if (err) throw err;
+
+        // do something with the results
+        res.send(results);
+    });
 });
 
 // Get project by id
@@ -90,7 +138,7 @@ app.get('/users', (req, res) => {
 });
 
 // Get user by id
-app.get('/projects/:id', (req, res) => {
+app.get('/user/:id', (req, res) => {
 
     // get the user id from the request parameters and escape it
     const id = mysql.escape(req.params.id);
