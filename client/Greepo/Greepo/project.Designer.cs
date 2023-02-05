@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblProjectTitle = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblMuni = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProjectTitle
@@ -62,9 +67,9 @@
             // 
             // lblDesc
             // 
-            this.lblDesc.Location = new System.Drawing.Point(58, 188);
+            this.lblDesc.Location = new System.Drawing.Point(12, 188);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(315, 323);
+            this.lblDesc.Size = new System.Drawing.Size(324, 361);
             this.lblDesc.TabIndex = 2;
             this.lblDesc.Text = "label2";
             // 
@@ -86,11 +91,30 @@
             this.lblMuni.TabIndex = 4;
             this.lblMuni.Text = "label4";
             // 
+            // chart1
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(342, 334);
+            this.chart1.Name = "chart1";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series3.Color = System.Drawing.Color.Lime;
+            series3.Legend = "Legend1";
+            series3.Name = "Objectives";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(430, 215);
+            this.chart1.TabIndex = 5;
+            this.chart1.Text = "chart1";
+            // 
             // project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.lblMuni);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblDesc);
@@ -100,6 +124,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project";
             this.Load += new System.EventHandler(this.project_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +137,6 @@
         private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblMuni;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

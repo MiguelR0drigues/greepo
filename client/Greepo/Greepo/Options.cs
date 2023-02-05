@@ -81,19 +81,31 @@ namespace Greepo
         private void municipiosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchMunicipio search = new SearchMunicipio();
+            Hide();
+
             search.Show();
         }
 
         private void regioesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchBar search2 = new SearchBar();
+            Hide();
+
             search2.Show();
         }
 
         private void distritosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchDistrito search= new SearchDistrito();    
+            SearchDistrito search= new SearchDistrito();   
+            Hide();
             search.Show();  
+        }
+
+        private void encerrarSessãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            Hide();
         }
     }
 }

@@ -59,7 +59,6 @@ D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.Wpf.pdb
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\LiveCharts.Wpf.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.AssemblyReference.cache
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.csproj.SuggestedBindingRedirects.cache
-D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Form1.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SignUp.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Login.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Properties.Resources.resources
@@ -72,7 +71,6 @@ D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Newtonsoft.Json.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Projects.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.project.resources
-D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Graph.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\DocumentFormat.OpenXml.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MySqlConnector.dll
@@ -89,7 +87,6 @@ D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\System.Memory.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\System.Numerics.Vectors.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Apriori.resources
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Accord.dll.config
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Accord.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\Accord.Fuzzy.dll
@@ -505,3 +502,21 @@ D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\ru\Microsoft.VisualStudio.Servic
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\tr\Microsoft.VisualStudio.Services.WebApi.resources.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.WebApi.resources.dll
 D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.WebApi.resources.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Options.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Search.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchBar.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchDistrito.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchDistritoProject.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchMunicipio.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.SearchMunicipioProject.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\AForge.Fuzzy.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Recuperar.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\obj\Debug\Greepo.Token.resources
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\BouncyCastle.Crypto.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MailKit.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MimeKit.dll
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\BouncyCastle.Crypto.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MailKit.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MailKit.xml
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MimeKit.pdb
+D:\GREEPO\greepo\client\Greepo\Greepo\bin\Debug\MimeKit.xml

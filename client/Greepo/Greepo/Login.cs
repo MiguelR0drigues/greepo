@@ -91,6 +91,13 @@ namespace Greepo
             signup.Show();
             Hide();
         }
+
+        private void linkRecoverPw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Recuperar Recuperar = new Recuperar();
+            Recuperar.Show();
+            Hide();
+        }
     }
     public class Utilities
     {

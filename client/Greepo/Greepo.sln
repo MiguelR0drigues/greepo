@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greepo", "Greepo\Greepo.csproj", "{B92663A9-D993-4F96-894D-594A85BE6C8E}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Greepo Installer", "Greepo Installer\Greepo Installer.vdproj", "{30B418F6-40FC-40D5-BB7B-9C331CB099AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{B92663A9-D993-4F96-894D-594A85BE6C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B92663A9-D993-4F96-894D-594A85BE6C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B92663A9-D993-4F96-894D-594A85BE6C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B418F6-40FC-40D5-BB7B-9C331CB099AB}.Debug|Any CPU.ActiveCfg = Release
+		{30B418F6-40FC-40D5-BB7B-9C331CB099AB}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,10 +25,13 @@ namespace Greepo
         }
         private async void Search_Load(object sender, EventArgs e)
         {
-            listBox1.SelectedIndex = -1;
-            isFormLoad = false;
             await GetProjectsByDistrito();
+            await ConfigureChart();
+            isFormLoad = false;
+            listBox1.SelectedIndex = -1;
+            
         }
+
         private async Task GetProjectsByDistrito()
         {
             List<string> resultsList = new List<string>();
@@ -37,8 +41,10 @@ namespace Greepo
                 HttpResponseMessage response = await client.GetAsync($"http://localhost:2080/distritos/{_distritoId}");
                 if (response.IsSuccessStatusCode)
                 {
+
                     string responseBody = await response.Content.ReadAsStringAsync();
                     JArray json = JArray.Parse(responseBody);
+                    lblTitle.Text = "Projetos do distrito de "+json[0]["district_name"].ToString();
                     if (json != null)
                     {
                         foreach (var item in json)
@@ -74,6 +80,103 @@ namespace Greepo
                     project.Show();
                 }
             }
+        }
+
+        private async Task ConfigureChart()
+        {
+            chart1.Series["Objetivos"].IsValueShownAsLabel = true;
+            chart1.Series["Objetivos"].IsVisibleInLegend = false;
+            double o1 = 0;
+            double o2 = 0;
+            double o3 = 0;
+            double o4 = 0;
+            double o5 = 0;
+            double o6 = 0;
+            double o7 = 0;
+            double o8 = 0;
+            double o9 = 0;
+            double o10 = 0;
+            double o11 = 0;
+            double o12 = 0;
+            double o13 = 0;
+            double o14 = 0;
+            double o15 = 0;
+            double o16 = 0;
+            double o17 = 0;
+
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:2080/project-values-district/{_distritoId}");
+                if (response.IsSuccessStatusCode)
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    dynamic json = JsonConvert.DeserializeObject(responseBody);
+                    int length = json.Count;
+                    foreach (var item in json)
+                    {
+                        o1 += (double)item.o1;
+                        o2 += (double)item.o2;
+                        o3 += (double)item.o3;
+                        o4 += (double)item.o4;
+                        o5 += (double)item.o5;
+                        o6 += (double)item.o6;
+                        o7 += (double)item.o7;
+                        o8 += (double)item.o8;
+                        o9 += (double)item.o9;
+                        o10 += (double)item.o10;
+                        o11 += (double)item.o11;
+                        o12 += (double)item.o12;
+                        o13 += (double)item.o13;
+                        o14 += (double)item.o14;
+                        o15 += (double)item.o15;
+                        o16 += (double)item.o16;
+                        o17 += (double)item.o17;
+                    }
+
+                    AddDataPoint("1", Math.Round(o1 / length, 2));
+                    AddDataPoint("2", Math.Round(o2 / length, 2));
+                    AddDataPoint("3", Math.Round(o3 / length, 2));
+                    AddDataPoint("4", Math.Round(o4 / length, 2));
+                    AddDataPoint("5", Math.Round(o5 / length, 2));
+                    AddDataPoint("6", Math.Round(o6 / length, 2));
+                    AddDataPoint("7", Math.Round(o7 / length, 2));
+                    AddDataPoint("8", Math.Round(o8 / length, 2));
+                    AddDataPoint("9", Math.Round(o9 / length, 2));
+                    AddDataPoint("10", Math.Round(o10 / length, 2));
+                    AddDataPoint("11", Math.Round(o11 / length, 2));
+                    AddDataPoint("12", Math.Round(o12 / length, 2));
+                    AddDataPoint("13", Math.Round(o13 / length, 2));
+                    AddDataPoint("14", Math.Round(o14 / length, 2));
+                    AddDataPoint("15", Math.Round(o15 / length, 2));
+                    AddDataPoint("16", Math.Round(o16 / length, 2));
+                    AddDataPoint("17", Math.Round(o17 / length, 2));
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Failed to get response from the API, Status Code: " + response.StatusCode);
+                }
+            }
+        }
+
+        private void AddDataPoint(string xValue, dynamic yValue)
+        {
+            if (yValue != null)
+            {
+                this.chart1.Series["Objetivos"].Points.AddXY(xValue, yValue.ToString());
+            }
+            else
+            {
+                this.chart1.Series["Objetivos"].Points.AddXY(xValue, 0);
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            SearchDistrito dist = new SearchDistrito();
+            dist.Show();
+            Hide();
         }
     }
 }

@@ -36,6 +36,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.linkToSignup = new System.Windows.Forms.LinkLabel();
+            this.linkRecoverPw = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -43,7 +44,7 @@
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(360, 135);
+            this.lblTitle.Location = new System.Drawing.Point(343, 136);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(127, 42);
@@ -133,20 +134,36 @@
             // 
             this.linkToSignup.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkToSignup.AutoSize = true;
-            this.linkToSignup.Location = new System.Drawing.Point(363, 319);
+            this.linkToSignup.Location = new System.Drawing.Point(364, 310);
             this.linkToSignup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkToSignup.Name = "linkToSignup";
             this.linkToSignup.Size = new System.Drawing.Size(83, 13);
             this.linkToSignup.TabIndex = 7;
             this.linkToSignup.TabStop = true;
             this.linkToSignup.Text = "Não tem conta?";
+            this.linkToSignup.VisitedLinkColor = System.Drawing.Color.Blue;
             this.linkToSignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkToSignup_LinkClicked);
+            // 
+            // linkRecoverPw
+            // 
+            this.linkRecoverPw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkRecoverPw.AutoSize = true;
+            this.linkRecoverPw.Location = new System.Drawing.Point(344, 336);
+            this.linkRecoverPw.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkRecoverPw.Name = "linkRecoverPw";
+            this.linkRecoverPw.Size = new System.Drawing.Size(126, 13);
+            this.linkRecoverPw.TabIndex = 8;
+            this.linkRecoverPw.TabStop = true;
+            this.linkRecoverPw.Text = "Recuperar palavra-passe";
+            this.linkRecoverPw.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.linkRecoverPw.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRecoverPw_LinkClicked);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.linkRecoverPw);
             this.Controls.Add(this.linkToSignup);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLogin);
@@ -174,5 +191,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.LinkLabel linkToSignup;
+        private System.Windows.Forms.LinkLabel linkRecoverPw;
     }
 }

@@ -78,5 +78,12 @@ namespace Greepo
             }
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            Hide();
+        }
     }
 }

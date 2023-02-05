@@ -71,10 +71,18 @@ namespace Greepo
                     int regiaoId = regiaoIds[selectedIndex];
                     //Creating a new instance of the Project form and passing the project id
                     Search search= new Search(regiaoId);
+                    this.Hide();
                     search.Show();
                 }
             }
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            Hide();
         }
     }
 }

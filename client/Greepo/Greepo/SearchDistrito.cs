@@ -72,9 +72,17 @@ namespace Greepo
                     //Creating a new instance of the Project form and passing the project id
                     SearchDistritoProject search = new SearchDistritoProject(distritoId);
                     search.Show();
+                    Hide();
                 }
             }
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            Hide();
         }
     }
 }
